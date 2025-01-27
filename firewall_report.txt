@@ -1,0 +1,446 @@
+=== Firewall Incident Report ===
+
+Alert #1
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    12:45:00    Block    UDP    192.168.1.100    203.0.113.5    54321    53    128    -    1    1    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 12:45:00
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 203.0.113.5
+SourcePort: 54321
+DestinationPort: 53
+Size: 128
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 203.0.113.5
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 128 bytes
+
+Alert #2
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    12:30:00    Block    UDP    192.168.1.100    203.0.113.5    5000    4000    512    -    1    0    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 12:30:00
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 203.0.113.5
+SourcePort: 5000
+DestinationPort: 4000
+Size: 512
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 0
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 203.0.113.5
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 512 bytes
+
+Alert #3
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    12:45:00    Block    UDP    192.168.1.100    203.0.113.5    54321    53    128    -    1    1    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 12:45:00
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 203.0.113.5
+SourcePort: 54321
+DestinationPort: 53
+Size: 128
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 203.0.113.5
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 128 bytes
+
+Alert #4
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    15:30:45    Block    UDP    192.168.1.50    203.0.113.60    6000    6000    2048    -    1    1    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 15:30:45
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.50
+DestinationIP: 203.0.113.60
+SourcePort: 6000
+DestinationPort: 6000
+Size: 2048
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.50 to 203.0.113.60
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 2048 bytes
+
+Alert #5
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:25:12	Block	UDP	192.168.1.100	10.0.0.50	52345	53	512	---	0	0	0	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:25:12
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 10.0.0.50
+SourcePort: 52345
+DestinationPort: 53
+Size: 512
+TCPFlags: ---
+TCPSYN: 0
+TCPACK: 0
+TCPWin: 0
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 10.0.0.50
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 512 bytes
+
+Alert #6
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:26:18	Block	UDP	172.16.0.10	203.0.113.1	50123	161	1024	---	1	0	1	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:26:18
+Action: Block
+Protocol: UDP
+SourceIP: 172.16.0.10
+DestinationIP: 203.0.113.1
+SourcePort: 50123
+DestinationPort: 161
+Size: 1024
+TCPFlags: ---
+TCPSYN: 1
+TCPACK: 0
+TCPWin: 1
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 172.16.0.10 to 203.0.113.1
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 1024 bytes
+
+Alert #7
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:27:30	Block	UDP	192.168.0.20	198.51.100.2	45000	123	128	---	0	1	0	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:27:30
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.0.20
+DestinationIP: 198.51.100.2
+SourcePort: 45000
+DestinationPort: 123
+Size: 128
+TCPFlags: ---
+TCPSYN: 0
+TCPACK: 1
+TCPWin: 0
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.0.20 to 198.51.100.2
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 128 bytes
+
+Alert #8
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:28:45	Block	UDP	10.0.0.15	224.0.0.1	5353	5353	64	---	1	1	1	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:28:45
+Action: Block
+Protocol: UDP
+SourceIP: 10.0.0.15
+DestinationIP: 224.0.0.1
+SourcePort: 5353
+DestinationPort: 5353
+Size: 64
+TCPFlags: ---
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 1
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 10.0.0.15 to 224.0.0.1
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 64 bytes
+
+Alert #9
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    12:45:00    Block    UDP    192.168.1.100    203.0.113.5    54321    53    128    -    1    1    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 12:45:00
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 203.0.113.5
+SourcePort: 54321
+DestinationPort: 53
+Size: 128
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 203.0.113.5
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 128 bytes
+
+Alert #10
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23    12:30:00    Block    UDP    192.168.1.100    203.0.113.5    5000    4000    512    -    1    0    4096    -    -
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 12:30:00
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 203.0.113.5
+SourcePort: 5000
+DestinationPort: 4000
+Size: 512
+TCPFlags: -
+TCPSYN: 1
+TCPACK: 0
+TCPWin: 4096
+ICMPType: -
+ICMPCode: -
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 203.0.113.5
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 512 bytes
+
+Alert #11
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:25:12	Block	UDP	192.168.1.100	10.0.0.50	52345	53	512	---	0	0	0	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:25:12
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.100
+DestinationIP: 10.0.0.50
+SourcePort: 52345
+DestinationPort: 53
+Size: 512
+TCPFlags: ---
+TCPSYN: 0
+TCPACK: 0
+TCPWin: 0
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.100 to 10.0.0.50
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 512 bytes
+
+Alert #12
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:26:18	Block	UDP	172.16.0.10	203.0.113.1	50123	161	1024	---	1	0	1	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:26:18
+Action: Block
+Protocol: UDP
+SourceIP: 172.16.0.10
+DestinationIP: 203.0.113.1
+SourcePort: 50123
+DestinationPort: 161
+Size: 1024
+TCPFlags: ---
+TCPSYN: 1
+TCPACK: 0
+TCPWin: 1
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 172.16.0.10 to 203.0.113.1
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 1024 bytes
+
+Alert #13
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:27:30	Block	UDP	192.168.0.20	198.51.100.2	45000	123	128	---	0	1	0	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:27:30
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.0.20
+DestinationIP: 198.51.100.2
+SourcePort: 45000
+DestinationPort: 123
+Size: 128
+TCPFlags: ---
+TCPSYN: 0
+TCPACK: 1
+TCPWin: 0
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.0.20 to 198.51.100.2
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 128 bytes
+
+Alert #14
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2024-11-23	10:28:45	Block	UDP	10.0.0.15	224.0.0.1	5353	5353	64	---	1	1	1	0	0
+
+=== Parsed Log Details ===
+Date: 2024-11-23
+Time: 10:28:45
+Action: Block
+Protocol: UDP
+SourceIP: 10.0.0.15
+DestinationIP: 224.0.0.1
+SourcePort: 5353
+DestinationPort: 5353
+Size: 64
+TCPFlags: ---
+TCPSYN: 1
+TCPACK: 1
+TCPWin: 1
+ICMPType: 0
+ICMPCode: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 10.0.0.15 to 224.0.0.1
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 64 bytes
+
+Alert #15
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2025-01-02 12:35:05 Block UDP 192.168.1.150 10.0.0.10 23456 53 500 1 0 0 0
+
+=== Parsed Log Details ===
+Date: 2025-01-02
+Time: 12:35:05
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.150
+DestinationIP: 10.0.0.10
+SourcePort: 23456
+DestinationPort: 53
+Size: 500
+TCPFlags: 1
+TCPSYN: 0
+TCPACK: 0
+TCPWin: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.150 to 10.0.0.10
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 500 bytes
+
+Alert #16
+Incident Time: 2025-01-27 16:43:26
+Log Entry: 2025-01-02 12:35:05 Block UDP 192.168.1.150 10.0.0.10 23456 53 500 1 0 0 0
+
+=== Parsed Log Details ===
+Date: 2025-01-02
+Time: 12:35:05
+Action: Block
+Protocol: UDP
+SourceIP: 192.168.1.150
+DestinationIP: 10.0.0.10
+SourcePort: 23456
+DestinationPort: 53
+Size: 500
+TCPFlags: 1
+TCPSYN: 0
+TCPACK: 0
+TCPWin: 0
+
+=== Alert Details ===
+ALERT: Suspicious traffic from 192.168.1.150 to 10.0.0.10
+
+=== Investigation Details ===
+Traffic analysis:
+  Suspicious packet size: Large packet size detected: 500 bytes
+
