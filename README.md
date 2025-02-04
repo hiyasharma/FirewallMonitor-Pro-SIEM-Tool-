@@ -40,7 +40,22 @@ cd FirewallMonitor-Pro-SIEM-Tool
 - **HTML Report:** `alerts_report.html`
 
 ## Screenshots
-(Add screenshots here if available)
+
+Monitoring Started
+![image](https://github.com/user-attachments/assets/89918bab-0615-4721-8c94-fe0522f4477e)
+
+Text Report
+![image](https://github.com/user-attachments/assets/3bd48947-bec6-4307-a218-550deb780ac8)
+
+HTML Report
+![image](https://github.com/user-attachments/assets/442eebd5-0f80-4f98-aaad-f31d25952b8c)
+
+Monitoring Stopped
+![image](https://github.com/user-attachments/assets/783207a8-43bd-48fd-827c-aa3dc66b4713)
+
+
+
+
 
 ## License
 This project is licensed under the MIT License.
